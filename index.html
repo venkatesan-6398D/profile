@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Customer Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Customer Profile</h1>
+
+      <!-- Profile Section -->
+      <div class="profile">
+        <h2>Profile Information</h2>
+        <p><strong>Name:</strong> <span id="userName">John Doe</span></p>
+        <p>
+          <strong>Email:</strong>
+          <span id="userEmail">johndoe@example.com</span>
+        </p>
+        <p><strong>Phone:</strong> <span id="userPhone">+123456789</span></p>
+        <button onclick="editProfile()">Edit Profile</button>
+      </div>
+
+      <!-- Address Section -->
+      <div class="addresses">
+        <h2>Addresses</h2>
+        <ul id="addressList">
+          <!-- List of addresses will appear here -->
+        </ul>
+        <button onclick="addAddress()">Add New Address</button>
+      </div>
+
+      <!-- Payment Section -->
+      <div class="payment">
+        <h2>Payment Methods</h2>
+        <ul id="paymentList">
+          <!-- Payment methods will appear here -->
+        </ul>
+        <button onclick="addPayment()">Add Payment Method</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
